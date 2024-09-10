@@ -1,5 +1,8 @@
-import React from "react";
+import React ,{useState} from "react"; 
 import "../Components/Global.css";
+import axios from "axios";
+
+
 
 const handlecolorName = () => {
   let naam = document.getElementById("naam");
@@ -27,6 +30,36 @@ const handlecolorMessage = () => {
 };
 
 const Contact = ({ bgcolor, darkmode }) => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      window.location.reload();
+      const response = await axios.post("http://localhost:5000/send", formData);
+      if (response.status === 200) {
+        alert("Message sent successfully!");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Error sending message.");
+    }
+  };
+
+
   return (
     <>
       {/* <div className="about p-3 relative aboutus"> */}
@@ -67,7 +100,9 @@ const Contact = ({ bgcolor, darkmode }) => {
               </h1>
             </div>
 
-            <form action="https://formspree.io/f/xyyrnkyr" method="POST">
+            <form
+            
+             onSubmit={handleSubmit}>
               <div className="flex flex-col">
                 <label
                   id="naam"
@@ -87,6 +122,8 @@ const Contact = ({ bgcolor, darkmode }) => {
                     }`,
                     color: `${bgcolor === "white" ? "#000000" : "white"}`,
                   }}
+                 
+                  onChange={handleInputChange}
                   onClick={handlecolorName}
                   name="name"
                   id="borderColorName"
@@ -113,6 +150,8 @@ const Contact = ({ bgcolor, darkmode }) => {
                     }`,
                     color: `${bgcolor === "white" ? "#000000" : "#white"}`,
                   }}
+                  value={formData.email}
+                  onChange={handleInputChange}
                   onClick={handlecolorEmail}
                   name="email"
                   id="borderColorEmail"
@@ -137,6 +176,8 @@ const Contact = ({ bgcolor, darkmode }) => {
                     }`,
                     color: `${bgcolor === "white" ? "#000000" : "white"}`,
                   }}
+                  value={formData.message}
+                  onChange={handleInputChange}
                   onClick={handlecolorMessage}
                   name="message"
                   id="borderColorMessage"
