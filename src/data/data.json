@@ -1,0 +1,65 @@
+
+{
+    "skills":[
+        {"name":"C++","image":"/logo/c++.png"},
+        {"name":"Java","image":"/logo/java.png"},
+        {"name":"JavaScript","image":"/logo/js.png"},
+        {"name":"HTML","image":"/logo/html.png"},
+        {"name":"Css","image":"/logo/css.png"},
+        {"name":"Bootstrap","image":"/logo/bootstrap.png"},
+        {"name":"React JS","image":"/logo/react.png"},
+        {"name":"Tailwind Css","image":"/logo/tailwind.png"},
+        {"name":"React Native","image":"/logo/react.png"},
+        {"name":"Node JS","image":"/logo/node.png"},
+        {"name":"Express JS","image":"/logo/ex.png"},
+        {"name":"MongoDB","image":"/logo/mongodb.png"},
+        {"name":"SQL","image":"/logo/sql.png"}
+        
+    ],
+    "otherSkills": [{"name":"Postman","image":"/logo/postman.png"},
+    {"name":"Docker","image":"/logo/docker.png"},
+    {"name":"Github","image":"/logo/github.png"},
+    {"name":"Git","image":"/logo/git.png"}
+  ],
+    "projectsData": [
+          {
+            "title": "StudyNotion: An EdTech platform that helps students access quality education resources and courses(React.js, Node.js, MongoDB, Express.js)",
+            "imageUrl": "/project-image/study.jpg",
+            "githubLink": "https://github.com/Ankushsehgal909/Study-hub",
+            "liveLink": "https://studynotion-9.netlify.app/"
+          },
+          {
+            "title": "TextWizard: A powerful online tool for manipulating text in a variety of ways(React.js,Bootstrap )",
+            "imageUrl": "/project-image/textwizard.png",
+            "githubLink": "https://github.com/Ankushsehgal909/React-App_TextWizard_Source_Code",
+            "liveLink": "https://ankushsehgal909.github.io/TextWizard/"
+          },
+          {
+            "title": "Sardar: A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks",
+            "imageUrl": "/project-image/Sardar.png",
+            "githubLink": "https://github.com/Ankushsehgal909/MQTT-Server",
+            "liveLink": "https://sardar9.netlify.app/"
+          },
+          {
+            "title": "Portfoilo:  A simple portfolio website for showcasing projects and skills(ReactJs, Tailwind CSS, FramerMotion)",
+            "imageUrl": "/project-image/Portfolio.png",
+            "githubLink": "https://github.com/Ankushsehgal909/Dashboard",
+            "liveLink": "https://ankush909.netlify.app/"
+          },
+          {
+            "title": "Dashboard",
+            "imageUrl": "/project-image/dashboard.png",
+            "githubLink": "https://github.com/Ankushsehgal909/Dashboard",
+            "liveLink": "https://asg-dashboard.netlify.app/"
+          },
+          {
+            "title": "Headline Hub: A daily update news app.",
+            "imageUrl": "/project-image/Headline hub.png",
+            "githubLink": "https://github.com/Ankushsehgal909/React-App_Headline_Hub",
+            "liveLink": "https://github.com/Ankushsehgal909/React-App_Headline_Hub"
+          }
+        ]
+      
+      
+    
+}
