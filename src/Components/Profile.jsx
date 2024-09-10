@@ -223,7 +223,7 @@ const Profile = ({ show, setShow, darkmode, bgcolor,setCross }) => {
                     bgcolor === "white" ? "text-black" : "text-white"
                   }`}
                 >
-                  +91 9720121408
+                  +91 97xxxxxxxx
                 </h1>
               </div>
             </div>
