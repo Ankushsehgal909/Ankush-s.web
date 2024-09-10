@@ -29,8 +29,10 @@ const handlecolorMessage = () => {
   borderColorMessage.style.height = "1.5rem";
 };
 
+// ********************************************************************************************************
 const Contact = ({ bgcolor, darkmode }) => {
 
+  const [loader, setLoader] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,10 +50,11 @@ const Contact = ({ bgcolor, darkmode }) => {
     e.preventDefault();
 
     try {
-      window.location.reload();
-      const response = await axios.post("http://localhost:5000/send", formData);
+      setLoader(false)
+      const response = await axios.post("https://ankush-s-web.vercel.app/send", formData);
       if (response.status === 200) {
         alert("Message sent successfully!");
+        setLoader(true)
       }
     } catch (error) {
       console.error("Error sending message:", error);
@@ -192,7 +195,7 @@ const Contact = ({ bgcolor, darkmode }) => {
                 }}
                 type="submit"
               >
-                Submit
+                {loader?"submit":"wait"}
               </button>
             </form>
           </div>
