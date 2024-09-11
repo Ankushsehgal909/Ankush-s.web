@@ -10,6 +10,7 @@ import { FaRegUser } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { TiContacts } from "react-icons/ti";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 
 const Profile = ({ show, setShow, darkmode, bgcolor,setCross }) => {
