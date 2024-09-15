@@ -22,6 +22,12 @@
     {"name":"Git","image":"/logo/git.png"}
   ],
     "projectsData": [
+         {
+            "title": "Smart Journey:AI based Your personal trip planner and travel curator, creating custom itineraries tailored to your interests and budget(React.js)",
+            "imageUrl": "/project-image/smartJourney",
+            "githubLink": "https://github.com/Ankushsehgal909/smart-journey",
+            "liveLink": "https://smartjourney.netlify.app/"
+          },
           {
             "title": "StudyNotion: An EdTech platform that helps students access quality education resources and courses(React.js, Node.js, MongoDB, Express.js)",
             "imageUrl": "/project-image/study.jpg",
