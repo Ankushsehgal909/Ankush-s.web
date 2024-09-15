@@ -24,7 +24,7 @@
     "projectsData": [
          {
             "title": "Smart Journey:AI based Your personal trip planner and travel curator, creating custom itineraries tailored to your interests and budget(React.js)",
-            "imageUrl": "/project-image/smartJourney",
+            "imageUrl": "/project-image/smartJourney.png",
             "githubLink": "https://github.com/Ankushsehgal909/smart-journey",
             "liveLink": "https://smartjourney.netlify.app/"
           },
