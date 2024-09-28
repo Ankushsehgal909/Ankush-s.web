@@ -284,7 +284,7 @@ const Profile = ({ show, setShow, darkmode, bgcolor,setCross }) => {
           </div>
           <div className="flex relative top-5">
             <button className="bg-blue-500 flex items-center rounded-lg justify-center text-white p-2 text-md text-nowrap w-36 h-10">
-              <a href="https://drive.google.com/file/d/1HvPw4XgSmedU8bpL3TfDL-44iDeORoz-/view?usp=drive_link" download="Resume" className="flex" >
+              <a href="https://drive.google.com/drive/folders/1QeD6a3eAjySyP04IobiGPOrjXBXbsxSv?usp=sharing" download="Resume" className="flex" >
                 <MdOutlineFileDownload className="text-2xl" />
                 Download CV
               </a>
