@@ -28,6 +28,12 @@
             "githubLink": "https://github.com/Ankushsehgal909/smart-journey",
             "liveLink": "https://smartjourney.netlify.app/"
           },
+                {
+            "title": "AI trip planner:AI based Your personal trip planner Android App(React native)",
+            "imageUrl": "/project-image/ai-trip-planner.png",
+            "githubLink": "https://github.com/Ankushsehgal909/smart-journey",
+            "liveLink": "https://ai-trip-planner-apk.netlify.app/"
+          },
           {
             "title": "StudyNotion: An EdTech platform that helps students access quality education resources and courses(React.js, Node.js, MongoDB, Express.js)",
             "imageUrl": "/project-image/study.jpg",
